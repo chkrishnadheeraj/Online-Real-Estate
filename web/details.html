@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+ <html> 
+     <head>
+     
+         
+            <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+            <style>
+			body{
+			       
+			     
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				background-size: cover;
+				
+			}
+
+                .form{
+    /* Size and position */
+    width: 400px;
+    margin: 60px auto 30px;
+    padding: 5px;
+    position: relative;
+    /* Font styles */
+    font-family:  sans-serif;
+    color: white;
+    text-shadow: 0 2px 1px gray;
+}
+
+.form h1 {
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.form input[type=text],
+.form input[type=password] {
+    /* Size and position */
+    width: 100%;
+    padding: 8px 4px 8px 10px ;
+    margin-bottom: 15px;
+
+    /* Styles */
+    border: 1px solid #4e3043; /* Fallback */
+    border: 1px solid rgba(78,48,67, 0.8);
+    background: rgba(0,0,0,0.15);
+    border-radius: 2px;
+
+    /* Font styles */
+    font-family: Arial;
+    color: #fff;
+    font-size: 13px;
+}   
+.form input[type=submit] {
+    /* Size and position */
+    width: 100%;
+    padding: 8px 5px;
+    
+    /* Styles */
+    background: gray;    
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    /*transition: all 0.3s ease-out;*/
+
+    /* Font styles */
+    color: white;
+    /*text-shadow: 0 1px 0 rgba(0,0,0,0.3);*/
+    font-size: 16px;
+    font-weight: bold;
+    font-family:  Arial;
+}
+
+.form input[type=submit]:hover {
+    box-shadow: 
+        inset 0 20px 30px #bfbfbf;		
+        
+}
+.form label:hover ~ input {
+    border-color: #333;
+}
+
+           </style>
+        
+       </head>
+       
+<body background="images/gallery_1.jpg">
+    
+ <form class="form" name="signup" onsubmit="return vaildateForm()" method="post" action="details.jsp">
+    <h1>DETIALS OF PROPERTY</h1>
+    <p>
+        <label for="holdername" ><font color="white">HOLDER NAME</font></label>
+        <input type="text" name="holdername" >
+    </p>
+    <p>
+        <label for="propertyarea" ><font color="white">PROPERTY AREA</font></label>
+        <input type="text" name="propertyarea" >
+    </p>
+    <p>
+        <label for="cost"><font color="white">COST</font></label>
+        <input type="text" name='cost' > 
+ 
+             <h4>Address</h4>
+        <p>
+        <label for="dno"><font color="white">DNo</font></label>
+        <input type="text" name="dno" > 
+     </p>
+	  <p>
+        <label for="street"><font color="white">Street</font></label>
+        <input type="text" name="street" > 
+          </p>
+      <p>
+        <label for="landmark"><font color="white">LANDMARK</font></label>
+        <input type="text" name="landmark"> 
+     </p>
+        
+	  <p>
+        <label for="city"><font color="white"></font>CITY</label>
+        <input type="text" name='city' > 
+     </p>
+        
+	  <p>
+        <label for="zipcode"><font color="white"></font>ZIPCODE</label>
+        <input type="text" name='zipcode' > 
+     </p>
+
+
+
+
+    
+         <p>
+        <label for="mobile"><font color="white"></font>MOBILE</label>
+        <input type="text" name='mobile' > 
+     </p>
+      <p>
+        <label for="email"><font color="white"></font>EMAIL</label>
+        <input type="text" name='email' > 
+     </p>
+        
+       <input class="btn btn-large btn-primary" type="submit" name="submit" value="submit" />
+       
+       
+</form>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+ .header {
+	color:#599b29;
+	background-color:#178ded;
+	padding:10px;
+	text-align:left;
+	margin-top:0px;
+        font-style: italic;
+}
+div a{
+	text-decoration:none;
+	 display:inline-block; 
+	 padding:2px;
+}
+
+ul{
+	 display:inline;
+	 float:right;
+}
+
+ul li{
+	display: inline-block;
+	padding:10px;
+}
+
+
+
+ 
